@@ -1,0 +1,226 @@
+/* index.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-container-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container-box input[type="email"],
+.auth-container-box input[type="password"],
+.auth-container-box input[type="submit"] {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-container-box input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.auth-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.auth-options button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.list-header h1 {
+  margin: 0;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.create {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.signout {
+  background-color: #f44336;
+  color: white;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+}
+
+.task-title {
+  margin-left: 10px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.progress-container {
+  margin: 10px 0;
+}
+
+.edit,
+.delete {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.edit {
+  background-color: #ffeb3b;
+  color: black;
+}
+
+.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.model {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.form-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.model form input[type="text"],
+.model form input[type="range"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.model form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.outer-bar {
+  width: 100%;
+  background-color: #e0e0df;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.inner-bar {
+  height: 100%;
+  background-color: #76c7c0;
+  border-radius: 10px 0 0 10px;
+  transition: width 0.3s ease-in-out;
+}
+/* index.css */
+
+/* Other CSS */
+
+.checkbox-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-wrapper label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-wrapper label:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + label:before {
+  background-color: #4CAF50;
+  border: none;
+}
+
+/* Other CSS */
